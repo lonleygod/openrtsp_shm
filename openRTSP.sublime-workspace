@@ -1,0 +1,223 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "package",
+		"selected_items":
+		[
+			[
+				"package",
+				"Package Control: List Packages"
+			],
+			[
+				":w",
+				":w - Save"
+			],
+			[
+				"pack",
+				"Package Control: List Packages"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				":q",
+				"Set Syntax: SQL"
+			]
+		],
+		"width": 593.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/zhourunnan/program/openRTSP",
+		"/Users/zhourunnan/program/openRTSP/include",
+		"/Users/zhourunnan/program/openRTSP/src"
+	],
+	"file_history":
+	[
+		"/Users/zhourunnan/program/openRTSP/src/playCommon.cpp",
+		"/Users/zhourunnan/program/openRTSP/src/openRTSP.cpp",
+		"/Users/zhourunnan/program/openRTSP/openRTSP.sublime-project",
+		"/Users/zhourunnan/program/darwInjectorCamLiving/src/testOnDemandRTSPServer.cpp",
+		"/Users/zhourunnan/program/darwInjectorCamLiving/darwin.sublime-project",
+		"/Users/zhourunnan/program/camLivingServer/src/testOnDemandRTSPServer.cpp",
+		"/Users/zhourunnan/program/camLivingServer/cam.sublime-project",
+		"/Users/zhourunnan/Library/Application Support/Sublime Text 3/Packages/Package Control/Package Control.sublime-settings",
+		"/Users/zhourunnan/program/adder_zhou/adder.sublime-project",
+		"/Users/zhourunnan/program/adder_zhou/src/main.cpp",
+		"/Users/zhourunnan/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/Users/zhourunnan/program/adder_zhou/src/adder.cpp",
+		"/Users/zhourunnan/program/adder_zhou/include/adder.h",
+		"/Users/zhourunnan/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/zhourunnan/program/adder_zhou/untitled.sublime-project",
+		"/Users/zhourunnan/Library/Application Support/Sublime Text 3/Packages/SideBarEnhancements/Side Bar.sublime-settings",
+		"/Users/zhourunnan/Library/Application Support/Sublime Text 3/Packages/BracketHighlighter/bh_core.sublime-settings",
+		"/Users/zhourunnan/Desktop/abc.cpp",
+		"/Users/zhourunnan/Desktop/live555_darwin_injector/live555test/CamH264VideoStreamFramer.cpp",
+		"/Users/zhourunnan/Desktop/live555_darwin_injector/live555test/testOnDemandRTSPServer.cpp",
+		"/Users/zhourunnan/Desktop/live555test/testOnDemandRTSPServer.cpp",
+		"/Users/zhourunnan/program/camLivingServer/src/H264FramedLiveSource.cpp",
+		"/Users/zhourunnan/Desktop/live555test/live555test.cpp",
+		"/Users/zhourunnan/Desktop/live555test/targetver.h"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"a",
+			"printf",
+			"tab",
+			"ta'b"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.cc":
+	{
+		"height": 89.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "openRTSP.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 235.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
