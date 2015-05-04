@@ -35,13 +35,50 @@ ShmFileSink* ShmFileSink::createNew(UsageEnvironment& env, char const* fileName,
 }
 
 
+void ShmFileSink::addData(unsigned char const* data, unsigned dataSize,
+                           struct timeval presentationTime) {
+ printf("hello buaa!\n");
+     if (fPerFrameFileNameBuffer != NULL && fOutFid == NULL) {
+              // Special case: Open a new file on-the-fly for this frame
+              if (presentationTime.tv_usec == fPrevPresentationTime.tv_usec &&
+                              presentationTime.tv_sec == fPrevPresentationTime.tv_sec) {
+                        // The presentation time is unchanged from the previous frame, so we add a 'counter'
+                        // suffix to the file name, to distinguish them:
+                        sprintf(fPerFrameFileNameBuffer, "%s-%lu.%06lu-%u", fPerFrameFileNamePrefix,
+                                              presentationTime.tv_sec, presentationTime.tv_usec, ++fSamePresentationTimeCounter);
+                            } else {
+                                      sprintf(fPerFrameFileNameBuffer, "%s-%lu.%06lu", fPerFrameFileNamePrefix,
+                                                            presentationTime.tv_sec, presentationTime.tv_usec);
+                                            fPrevPresentationTime = presentationTime; // for next time
+                                                  fSamePresentationTimeCounter = 0; // for next time
+                                                      }
+                  fOutFid = OpenOutputFile(envir(), fPerFrameFileNameBuffer);
+                    }
 
+        // Write to our file:
+#ifdef TEST_LOSS
+        static unsigned const framesPerPacket = 10;
+          static unsigned const frameCount = 0;
+            static Boolean const packetIsLost;
+              if ((frameCount++)%framesPerPacket == 0) {
+                      packetIsLost = (our_random()%10 == 0); // simulate 10% packet loss #####
+                        }
+
+                if (!packetIsLost)
+#endif
+                    if (fOutFid != NULL && data != NULL) {
+                            fwrite(data, 1, dataSize, fOutFid);
+                              }
+}
 
 
 
 void ShmFileSink::afterGettingFrame(unsigned frameSize,
                              unsigned numTruncatedBytes,
-                                              struct timeval presentationTime) {
+                                              struct timeval presentationTime)
+{
+
+    printf("welcome to beijing!!!!\n");
     if (numTruncatedBytes > 0) 
       {
               envir() << "FileSink::afterGettingFrame(): The input frame data was too large for our buffer size ("
