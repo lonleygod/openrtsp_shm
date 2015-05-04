@@ -23,7 +23,7 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 #include "playCommon.hh"
 #include "BasicUsageEnvironment.hh"
 #include "GroupsockHelper.hh"
-
+#include "ShmFileSink.hh"
 #if defined(__WIN32__) || defined(_WIN32)
 #define snprintf _snprintf
 #else

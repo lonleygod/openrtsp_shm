@@ -115,6 +115,30 @@ openRTSP/fast:
 	cd /Users/chenqizhou/project/openRTSP/build && $(MAKE) -f src/CMakeFiles/openRTSP.dir/build.make src/CMakeFiles/openRTSP.dir/build
 .PHONY : openRTSP/fast
 
+ShmFileSink.o: ShmFileSink.cpp.o
+.PHONY : ShmFileSink.o
+
+# target to build an object file
+ShmFileSink.cpp.o:
+	cd /Users/chenqizhou/project/openRTSP/build && $(MAKE) -f src/CMakeFiles/openRTSP.dir/build.make src/CMakeFiles/openRTSP.dir/ShmFileSink.cpp.o
+.PHONY : ShmFileSink.cpp.o
+
+ShmFileSink.i: ShmFileSink.cpp.i
+.PHONY : ShmFileSink.i
+
+# target to preprocess a source file
+ShmFileSink.cpp.i:
+	cd /Users/chenqizhou/project/openRTSP/build && $(MAKE) -f src/CMakeFiles/openRTSP.dir/build.make src/CMakeFiles/openRTSP.dir/ShmFileSink.cpp.i
+.PHONY : ShmFileSink.cpp.i
+
+ShmFileSink.s: ShmFileSink.cpp.s
+.PHONY : ShmFileSink.s
+
+# target to generate assembly for a file
+ShmFileSink.cpp.s:
+	cd /Users/chenqizhou/project/openRTSP/build && $(MAKE) -f src/CMakeFiles/openRTSP.dir/build.make src/CMakeFiles/openRTSP.dir/ShmFileSink.cpp.s
+.PHONY : ShmFileSink.cpp.s
+
 openRTSP.o: openRTSP.cpp.o
 .PHONY : openRTSP.o
 
@@ -172,6 +196,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... openRTSP"
+	@echo "... ShmFileSink.o"
+	@echo "... ShmFileSink.i"
+	@echo "... ShmFileSink.s"
 	@echo "... openRTSP.o"
 	@echo "... openRTSP.i"
 	@echo "... openRTSP.s"

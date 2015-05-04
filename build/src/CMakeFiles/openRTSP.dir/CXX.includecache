@@ -10,6 +10,14 @@
 liveMedia.hh
 ../src/../include/liveMedia.hh
 
+/Users/chenqizhou/project/openRTSP/src/ShmFileSink.cpp
+ShmFileSink.hh
+/Users/chenqizhou/project/openRTSP/src/ShmFileSink.hh
+
+/Users/chenqizhou/project/openRTSP/src/ShmFileSink.hh
+FileSink.hh
+/Users/chenqizhou/project/openRTSP/src/FileSink.hh
+
 /Users/chenqizhou/project/openRTSP/src/openRTSP.cpp
 playCommon.hh
 /Users/chenqizhou/project/openRTSP/src/playCommon.hh
@@ -21,6 +29,8 @@ BasicUsageEnvironment.hh
 /Users/chenqizhou/project/openRTSP/src/BasicUsageEnvironment.hh
 GroupsockHelper.hh
 /Users/chenqizhou/project/openRTSP/src/GroupsockHelper.hh
+ShmFileSink.hh
+/Users/chenqizhou/project/openRTSP/src/ShmFileSink.hh
 signal.h
 -
 

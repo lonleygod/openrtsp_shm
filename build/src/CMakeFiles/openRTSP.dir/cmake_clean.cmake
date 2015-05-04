@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/openRTSP.dir/openRTSP.cpp.o"
   "CMakeFiles/openRTSP.dir/playCommon.cpp.o"
+  "CMakeFiles/openRTSP.dir/ShmFileSink.cpp.o"
   "../../bin/openRTSP.pdb"
   "../../bin/openRTSP"
 )

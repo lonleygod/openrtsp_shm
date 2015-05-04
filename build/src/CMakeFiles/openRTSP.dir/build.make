@@ -95,16 +95,41 @@ src/CMakeFiles/openRTSP.dir/playCommon.cpp.o.provides: src/CMakeFiles/openRTSP.d
 
 src/CMakeFiles/openRTSP.dir/playCommon.cpp.o.provides.build: src/CMakeFiles/openRTSP.dir/playCommon.cpp.o
 
+src/CMakeFiles/openRTSP.dir/ShmFileSink.cpp.o: src/CMakeFiles/openRTSP.dir/flags.make
+src/CMakeFiles/openRTSP.dir/ShmFileSink.cpp.o: ../src/ShmFileSink.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/chenqizhou/project/openRTSP/build/CMakeFiles $(CMAKE_PROGRESS_3)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/openRTSP.dir/ShmFileSink.cpp.o"
+	cd /Users/chenqizhou/project/openRTSP/build/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/openRTSP.dir/ShmFileSink.cpp.o -c /Users/chenqizhou/project/openRTSP/src/ShmFileSink.cpp
+
+src/CMakeFiles/openRTSP.dir/ShmFileSink.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/openRTSP.dir/ShmFileSink.cpp.i"
+	cd /Users/chenqizhou/project/openRTSP/build/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/chenqizhou/project/openRTSP/src/ShmFileSink.cpp > CMakeFiles/openRTSP.dir/ShmFileSink.cpp.i
+
+src/CMakeFiles/openRTSP.dir/ShmFileSink.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/openRTSP.dir/ShmFileSink.cpp.s"
+	cd /Users/chenqizhou/project/openRTSP/build/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/chenqizhou/project/openRTSP/src/ShmFileSink.cpp -o CMakeFiles/openRTSP.dir/ShmFileSink.cpp.s
+
+src/CMakeFiles/openRTSP.dir/ShmFileSink.cpp.o.requires:
+.PHONY : src/CMakeFiles/openRTSP.dir/ShmFileSink.cpp.o.requires
+
+src/CMakeFiles/openRTSP.dir/ShmFileSink.cpp.o.provides: src/CMakeFiles/openRTSP.dir/ShmFileSink.cpp.o.requires
+	$(MAKE) -f src/CMakeFiles/openRTSP.dir/build.make src/CMakeFiles/openRTSP.dir/ShmFileSink.cpp.o.provides.build
+.PHONY : src/CMakeFiles/openRTSP.dir/ShmFileSink.cpp.o.provides
+
+src/CMakeFiles/openRTSP.dir/ShmFileSink.cpp.o.provides.build: src/CMakeFiles/openRTSP.dir/ShmFileSink.cpp.o
+
 # Object files for target openRTSP
 openRTSP_OBJECTS = \
 "CMakeFiles/openRTSP.dir/openRTSP.cpp.o" \
-"CMakeFiles/openRTSP.dir/playCommon.cpp.o"
+"CMakeFiles/openRTSP.dir/playCommon.cpp.o" \
+"CMakeFiles/openRTSP.dir/ShmFileSink.cpp.o"
 
 # External object files for target openRTSP
 openRTSP_EXTERNAL_OBJECTS =
 
 ../bin/openRTSP: src/CMakeFiles/openRTSP.dir/openRTSP.cpp.o
 ../bin/openRTSP: src/CMakeFiles/openRTSP.dir/playCommon.cpp.o
+../bin/openRTSP: src/CMakeFiles/openRTSP.dir/ShmFileSink.cpp.o
 ../bin/openRTSP: src/CMakeFiles/openRTSP.dir/build.make
 ../bin/openRTSP: /usr/local/lib/libopencv_videostab.2.4.9.dylib
 ../bin/openRTSP: /usr/local/lib/libopencv_ts.a
@@ -135,6 +160,7 @@ src/CMakeFiles/openRTSP.dir/build: ../bin/openRTSP
 
 src/CMakeFiles/openRTSP.dir/requires: src/CMakeFiles/openRTSP.dir/openRTSP.cpp.o.requires
 src/CMakeFiles/openRTSP.dir/requires: src/CMakeFiles/openRTSP.dir/playCommon.cpp.o.requires
+src/CMakeFiles/openRTSP.dir/requires: src/CMakeFiles/openRTSP.dir/ShmFileSink.cpp.o.requires
 .PHONY : src/CMakeFiles/openRTSP.dir/requires
 
 src/CMakeFiles/openRTSP.dir/clean:
