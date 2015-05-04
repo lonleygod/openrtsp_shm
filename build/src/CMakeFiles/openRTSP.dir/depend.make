@@ -14,6 +14,7 @@ src/CMakeFiles/openRTSP.dir/ShmFileSink.cpp.o: /usr/local/include/liveMedia/Fram
 src/CMakeFiles/openRTSP.dir/ShmFileSink.cpp.o: /usr/local/include/liveMedia/Media.hh
 src/CMakeFiles/openRTSP.dir/ShmFileSink.cpp.o: /usr/local/include/liveMedia/MediaSink.hh
 src/CMakeFiles/openRTSP.dir/ShmFileSink.cpp.o: /usr/local/include/liveMedia/MediaSource.hh
+src/CMakeFiles/openRTSP.dir/ShmFileSink.cpp.o: /usr/local/include/liveMedia/OutputFile.hh
 src/CMakeFiles/openRTSP.dir/ShmFileSink.cpp.o: /usr/local/include/liveMedia/liveMedia_version.hh
 
 src/CMakeFiles/openRTSP.dir/openRTSP.cpp.o: ../src/../include/playCommon.hh

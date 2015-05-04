@@ -13,6 +13,8 @@ liveMedia.hh
 /Users/chenqizhou/project/openRTSP/src/ShmFileSink.cpp
 ShmFileSink.hh
 /Users/chenqizhou/project/openRTSP/src/ShmFileSink.hh
+OutputFile.hh
+/Users/chenqizhou/project/openRTSP/src/OutputFile.hh
 
 /Users/chenqizhou/project/openRTSP/src/ShmFileSink.hh
 FileSink.hh
@@ -651,6 +653,12 @@ BasicUDPSink.hh
 /usr/local/include/liveMedia/BasicUDPSink.hh
 RTCP.hh
 /usr/local/include/liveMedia/RTCP.hh
+
+/usr/local/include/liveMedia/OutputFile.hh
+UsageEnvironment.hh
+-
+stdio.h
+-
 
 /usr/local/include/liveMedia/PassiveServerMediaSubsession.hh
 ServerMediaSession.hh
