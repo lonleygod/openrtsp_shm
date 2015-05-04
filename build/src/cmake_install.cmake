@@ -1,4 +1,4 @@
-# Install script for directory: /Users/zhourunnan/program/openRTSP/src
+# Install script for directory: /Users/chenqizhou/project/openRTSP/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

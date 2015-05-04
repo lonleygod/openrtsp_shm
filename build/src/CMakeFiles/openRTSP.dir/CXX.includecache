@@ -10,17 +10,17 @@
 liveMedia.hh
 ../src/../include/liveMedia.hh
 
-/Users/zhourunnan/program/openRTSP/src/openRTSP.cpp
+/Users/chenqizhou/project/openRTSP/src/openRTSP.cpp
 playCommon.hh
-/Users/zhourunnan/program/openRTSP/src/playCommon.hh
+/Users/chenqizhou/project/openRTSP/src/playCommon.hh
 
-/Users/zhourunnan/program/openRTSP/src/playCommon.cpp
+/Users/chenqizhou/project/openRTSP/src/playCommon.cpp
 playCommon.hh
-/Users/zhourunnan/program/openRTSP/src/playCommon.hh
+/Users/chenqizhou/project/openRTSP/src/playCommon.hh
 BasicUsageEnvironment.hh
-/Users/zhourunnan/program/openRTSP/src/BasicUsageEnvironment.hh
+/Users/chenqizhou/project/openRTSP/src/BasicUsageEnvironment.hh
 GroupsockHelper.hh
-/Users/zhourunnan/program/openRTSP/src/GroupsockHelper.hh
+/Users/chenqizhou/project/openRTSP/src/GroupsockHelper.hh
 signal.h
 -
 

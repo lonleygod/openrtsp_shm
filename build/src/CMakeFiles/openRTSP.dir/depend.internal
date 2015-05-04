@@ -3,7 +3,7 @@
 
 src/CMakeFiles/openRTSP.dir/openRTSP.cpp.o
  ../src/../include/playCommon.hh
- /Users/zhourunnan/program/openRTSP/src/openRTSP.cpp
+ /Users/chenqizhou/project/openRTSP/src/openRTSP.cpp
  /usr/local/include/UsageEnvironment/Boolean.hh
  /usr/local/include/UsageEnvironment/HashTable.hh
  /usr/local/include/UsageEnvironment/UsageEnvironment.hh
@@ -159,7 +159,7 @@ src/CMakeFiles/openRTSP.dir/openRTSP.cpp.o
  /usr/local/include/liveMedia/uLawAudioFilter.hh
 src/CMakeFiles/openRTSP.dir/playCommon.cpp.o
  ../src/../include/playCommon.hh
- /Users/zhourunnan/program/openRTSP/src/playCommon.cpp
+ /Users/chenqizhou/project/openRTSP/src/playCommon.cpp
  /usr/local/include/BasicUsageEnvironment/BasicUsageEnvironment.hh
  /usr/local/include/BasicUsageEnvironment/BasicUsageEnvironment0.hh
  /usr/local/include/BasicUsageEnvironment/BasicUsageEnvironment_version.hh
