@@ -872,8 +872,7 @@ void createOutputFiles(char const* periodicFilenameSuffix) {
 	  // and (at the start) the SPS and PPS NAL units:
 
      printf("\n\n\n\n-------------------\n%s %s %d %d\n-----------------------\n\n\n",outFileName,subsession->fmtp_spropparametersets(),fileSinkBufferSize, oneFilePerFrame);
-	  fileSink = H264VideoFileSink::createNew(*env, outFileName,
-						  subsession->fmtp_spropparametersets(),
+	  fileSink = FileSink::createNew(*env, outFileName,
 						  fileSinkBufferSize, oneFilePerFrame);
 	} else if (strcmp(subsession->codecName(), "H265") == 0) {
 	  // For H.265 video stream, we use a special sink that adds 'start codes',
