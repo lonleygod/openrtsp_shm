@@ -19,6 +19,8 @@ OutputFile.hh
 /Users/chenqizhou/project/openRTSP/src/ShmFileSink.hh
 FileSink.hh
 /Users/chenqizhou/project/openRTSP/src/FileSink.hh
+sys/shm.h
+-
 
 /Users/chenqizhou/project/openRTSP/src/openRTSP.cpp
 playCommon.hh
