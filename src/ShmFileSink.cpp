@@ -6,42 +6,54 @@
  unsigned int ShmFileSink
 ::writeBuffer(circleBuffer* circleBuf,unsigned char const* data,unsigned int length)
  {
-   unsigned int readIndex = circleBuf->readIndex;
-  // printf("readIndex is %d\n",readIndex);
-   if (circleBuf->writeIndex >= readIndex){
-     if (circleBuf->writeIndex == readIndex && circleBuf->allowWrite == FALSE){
-       printf("Do not allowed to write!\n");
-       return -1;
-     }
-     if ((circleBuf->writeIndex + length) > BUFFER_LEN){
-       if (circleBuf->writeIndex + length - BUFFER_LEN < readIndex){
-         memcpy(circleBuf->buffer + circleBuf->writeIndex, data, BUFFER_LEN - circleBuf->writeIndex);
-         memcpy(circleBuf->buffer, data + BUFFER_LEN - circleBuf->writeIndex, circleBuf->writeIndex + length - BUFFER_LEN);
-         circleBuf->writeIndex = circleBuf->writeIndex + length - BUFFER_LEN;
-       }
-       else{
-         memcpy(circleBuf->buffer + circleBuf->writeIndex, data, BUFFER_LEN - circleBuf->writeIndex);
-         memcpy(circleBuf->buffer, data + BUFFER_LEN - readIndex, readIndex);
-         circleBuf->writeIndex = readIndex ;
-         printf("buffer full..\n");
-         circleBuf->allowWrite = FALSE;
-       }
-     }
-     else{
-       //printf("check point writeIndex %d length %d\n",circleBuf->writeIndex,length);
+  //  unsigned int readIndex = circleBuf->readIndex;
+  // // printf("readIndex is %d\n",readIndex);
+  //  if (circleBuf->writeIndex >= readIndex){
+  //    if (circleBuf->writeIndex == readIndex && circleBuf->allowWrite == FALSE){
+  //      printf("Do not allowed to write!\n");
+  //      return -1;
+  //    }
+  //    if ((circleBuf->writeIndex + length) > BUFFER_LEN){
+  //      if (circleBuf->writeIndex + length - BUFFER_LEN < readIndex){
+  //        memcpy(circleBuf->buffer + circleBuf->writeIndex, data, BUFFER_LEN - circleBuf->writeIndex);
+  //        memcpy(circleBuf->buffer, data + BUFFER_LEN - circleBuf->writeIndex, circleBuf->writeIndex + length - BUFFER_LEN);
+  //        circleBuf->writeIndex = circleBuf->writeIndex + length - BUFFER_LEN;
+  //      }
+  //      else{
+  //        memcpy(circleBuf->buffer + circleBuf->writeIndex, data, BUFFER_LEN - circleBuf->writeIndex);
+  //        memcpy(circleBuf->buffer, data + BUFFER_LEN - readIndex, readIndex);
+  //        circleBuf->writeIndex = readIndex ;
+  //        printf("buffer full..\n");
+  //        circleBuf->allowWrite = FALSE;
+  //      }
+  //    }
+  //    else{
+  //      //printf("check point writeIndex %d length %d\n",circleBuf->writeIndex,length);
+  //      memcpy(circleBuf->buffer + circleBuf->writeIndex, data, length);
+  //      circleBuf->writeIndex += length;
+  //    }
+  //  }
+  //  else if (circleBuf->writeIndex < readIndex){
+  //    if (circleBuf->writeIndex + length >= readIndex){
+  //      memcpy(circleBuf->buffer + circleBuf->writeIndex, data, readIndex - circleBuf->writeIndex);
+  //      printf("buffer full..\n");
+  //      circleBuf->allowWrite = FALSE;
+  //    }
+  //    else{
+  //      memcpy(circleBuf->buffer + circleBuf->writeIndex, data, length);
+  //    }
+  //  }
+  printf("wpoint:%d\n",circleBuf->writeIndex);
+   if (circleBuf->writeIndex + length < BUFFER_LEN)
+   {
        memcpy(circleBuf->buffer + circleBuf->writeIndex, data, length);
        circleBuf->writeIndex += length;
-     }
    }
-   else if (circleBuf->writeIndex < readIndex){
-     if (circleBuf->writeIndex + length >= readIndex){
-       memcpy(circleBuf->buffer + circleBuf->writeIndex, data, readIndex - circleBuf->writeIndex);
-       printf("buffer full..\n");
-       circleBuf->allowWrite = FALSE;
-     }
-     else{
-       memcpy(circleBuf->buffer + circleBuf->writeIndex, data, length);
-     }
+   else 
+   {
+         memcpy(circleBuf->buffer + circleBuf->writeIndex, data, BUFFER_LEN - circleBuf->writeIndex);
+         memcpy(circleBuf->buffer, data + BUFFER_LEN - circleBuf->writeIndex, circleBuf->writeIndex + length - BUFFER_LEN);
+         circleBuf->writeIndex = circleBuf->writeIndex + length - BUFFER_LEN;   
    }
    
    return 0;
@@ -62,6 +74,7 @@ ShmFileSink
               printf( "Create a shared memory segment %d\n",shmid[i] );  
          
           membuff[i]=shmat( shmid[i],( const void* )0,0 );  
+          printf("%d \n",membuff[i]);
           //if(membuff[i] == -1) printf("shmat error!\n");
           circleBufferArray[i] = (circleBuffer*)membuff[i];
   }
